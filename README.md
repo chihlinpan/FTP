@@ -35,3 +35,45 @@ allow_writeable_chroot=YES	//允许写入chroot
 anon_other_write_enable=YES	//允许匿名用户或者其他用户写入
 anon_root=~/chihlin/ftp	//修改匿名用户默认ftp目录
 ```
+完成后保存退出```:wq```
+重启vsftpd
+```
+systemctl restart vsftpd
+```
+# 使用ftp
+查看本地ip地址
+```
+ifconfig
+```
+在Terminal输入
+```
+ftp 0.0.0.0     //查询到的ip地址
+```
+## 本地用户登录
+```
+Connected to 0.0.0.0
+220 (vsFTPd 3.0.3)
+Name (0.0.0.0:username):      //login system username
+331 Please specify the password.
+Password:  #login system password
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+```
+## 匿名用户登录
+```
+Connected to 0.0.0.0
+220 (vsFTPd 3.0.3)
+Name (0.0.0.0:username):      //anonymous
+331 Please specify the password.
+Password:                     //just press enter key
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+```
+
+## 查看远程服务器目录```ls```
+## 切换目录```cd```
+## 下载远程文件到本地```get 1.txt```
+## 上传本地文件到远程服务器```pub 0.txt ```
+## 新建目录```mkdir test```
