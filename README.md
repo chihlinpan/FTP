@@ -72,8 +72,8 @@ Remote system type is UNIX.
 Using binary mode to transfer files.
 ```
 
-查看远程服务器目录```ls```
-切换目录```cd```
-下载远程文件到本地```get 1.txt```
-上传本地文件到远程服务器```pub 0.txt ```
-新建目录```mkdir test```
+查看远程服务器目录```ls```  
+切换目录```cd```  
+下载远程文件到本地```get 1.txt```  
+上传本地文件到远程服务器```pub 0.txt ```  
+新建目录```mkdir test```  
