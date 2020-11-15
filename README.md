@@ -1,4 +1,4 @@
-About FTP on linux for manjaro
+About FTP on linux
 # 安装vsftpd
 ```
 sudo pacman -S vsftpd //安装
